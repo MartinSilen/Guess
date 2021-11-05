@@ -7,7 +7,7 @@ public class App {
         int Answer = rnd.nextInt(9) + 1;
         Scanner com = new Scanner(System.in);
         while (true) {
-            System.out.println("Guess the number:");
+            System.out.println("Guess the number from 1 to 10:");
             int inp = com.nextInt();
             if (inp == Answer) {
                 System.out.println("That's Right!");
