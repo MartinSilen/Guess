@@ -7,12 +7,14 @@ public class App {
         int Answer = rnd.nextInt(9) + 1;
         Scanner com = new Scanner(System.in);
         while (true) {
-            System.out.println("Guess the number from 1 to 10:");
-            int inp = com.nextInt();
+           try{ System.out.println("Guess the number from 1 to 10:");
+           String tinp = com.nextLine();
+            int inp = Integer.parseInt(tinp);
             if (inp == Answer) {
                 System.out.println("That's Right!");
                 break;
-            } else System.out.println("Nope, try again");
+            } else System.out.println("Nope, try again");} 
+            catch (Exception e) {System.out.println("Wrong input!"); continue;}
         }
 
 
